@@ -19,10 +19,10 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
     Quick:<br>
     (1) You need to have I2C enabled on the pi via raspi-config <br>
     (2) Ensure WiringPi library is installed [Should be installed and ready to go with Raspbian] <br>
-    (3) Wire your LTC2990 to your Raspberry Pi using I2C bus 1 <br>
+    (3) Wire your LTC2990 to your Raspberry Pi using I2C bus 0 <br>
     (4) Test your I2C setup with Wiring Pi [this should already be installed]. Use 'i2cdetect -y 1' <br>
     NOTE: I used the Pi address 0x4C as this is where my LTC2990 is mapped to - you will see your address when 
-    you run the i2cdetect program as above. I have set my LTC2990 to the default hardware address 00 on the LTC2900 pins 8 &     9. If your address does not appearas 0x4C when the i2cdetect program is run, then you will need to modify the source. I am working to automatically update this address in the next release. The WiringPi library uses this address to talk to the device.Please do use the reference links below if you have issues.
+    you run the i2cdetect program as above. I have set my LTC2990 to the default hardware address 00 on the LTC2900 pins 8 &     9. If your address does not appear as 0x4C when the i2cdetect program is run, then you will need to modify this driver source. I am working to automatically update this address in the next release. The WiringPi library uses this address to talk to the device.Please do use the reference links below if you have issues.
      
 
 <b>Driver usage</b><br>

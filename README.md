@@ -7,6 +7,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
     * Implement timeout for busy bit <br>
     * ncurses display<br>
     * Node web page demo<br>
+    * Add run option argument for time between measurements - currently this is set to approx. 2 seconds
   
 <b>Features</b><br>
     * Good accuracy 14 bit ADC internal - easy to use no complicated ADC setups <br>
@@ -27,7 +28,10 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
 <b>Driver usage</b><br>
     <p>  to compile: 'g++ ltc2990.cpp -lwiringPi -o console_ltc2990_v1' <br>
          to run: ./console_ltc2990_v1
-         Running without any arguments lists V1, V2 & TR2 repeatedly, in the console. I have used the default setup where the            shunt voltage across the resistor is V1-V2, and TR2 is the remote temperature sensor.
+         Running without any arguments lists V1, V2 & TR2 repeatedly, in the console. I have used the default setup where the            shunt voltage across the resistor is V1-V2, and TR2 is the remote temperature sensor.<br>
+   ./console_ltc2990_v1 -h <i>This lists the run arguments.</i><br>
+   ./console_ltc2990_v1 -l <i> Values shown in std output and logs to csv file.</i><br>
+   ./console_ltc2990_v1 -s <i> Supress std output and log data to csv file.</i><br>
     
 <b>Reference links: </b><br>
 http://www.analog.com/en/products/monitor-control-protection/power-monitors/ltc2990.html<br>
@@ -35,5 +39,5 @@ http://wiringpi.com/<br>
 http://wiringpi.com/reference/i2c-library/<br>
 https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial<br>
 
-Thanks,
+Thanks,<br>
 Kevin Waite

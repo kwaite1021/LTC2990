@@ -1,5 +1,5 @@
 # LTC2990
-Raspberry Pi3 I2C driver for Analog Devices LTC2990 IC
+Raspberry Pi3 I2C driver for Analog Devices LTC2990 IC<br>
 This is a power monitor IC - you can measure voltage, shunt current and remote temperature using a transistor. The binary is also included if you do not wish to compile. The dependencies are g++ and WiringPi both of which are included in the Raspbian distribution. I will provide a development board with header pins for breadboard if anyone is interested, contact me here or at career4KW@gmail.com
 I plan to use my previous Raspberry PI Node web server to put the ltc2990 data on the web using the Pi as the node server.This will be included here when completed.
 
@@ -22,7 +22,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
     (3) Wire your LTC2990 to your Raspberry Pi using I2C bus 1 <br>
     (4) Test your I2C setup with Wiring Pi [this should already be installed]. Use 'i2cdetect -y 1' <br>
     NOTE: I used the Pi address 0x4C as this is where my LTC2990 is mapped to - you will see your address when 
-    you run the i2cdetect program as above. If your address is NOT 0x4C then you will need to modify the source. I am working     to automatically update this address in the next release. The WiringPi library uses this address to talk to the        device.Please do use the reference links below if you have issues.
+    you run the i2cdetect program as above. I have set my LTC2990 to the default hardware address 00 on the LTC2900 pins 8 &     9. If your address does not appearas 0x4C when the i2cdetect program is run, then you will need to modify the source. I am working to automatically update this address in the next release. The WiringPi library uses this address to talk to the device.Please do use the reference links below if you have issues.
      
 
 <b>Driver usage</b><br>

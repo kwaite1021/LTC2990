@@ -6,7 +6,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
 <b>TODO</b><br>
     * Implement timeout for busy bit <br>
     * ncurses display<br>
-    * Node web page demo<br>
+    * Node web page demo <i>See previous Node project: https://kwaite1021.github.io/piFrame/ </i> <br>
     * Add run option argument for time between measurements - currently this is set to approx. 2 seconds
   
 <b>Features</b><br>

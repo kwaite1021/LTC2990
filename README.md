@@ -1,6 +1,9 @@
 # LTC2990
 Raspberry Pi3 I2C driver for Analog Devices LTC2990 IC<br>
-This is a power monitor IC - you can measure voltage, shunt current and remote temperature using a transistor. The binary is also included if you do not wish to compile. The dependencies are g++ and WiringPi both of which are included in the Raspbian distribution. I will provide a development board with header pins for breadboard if anyone is interested, contact me here or at career4KW@gmail.com
+This is a power monitor IC - you can measure voltage, shunt current and remote temperature using a transistor. The binary is also included if you do not wish to compile. The dependencies are g++ and WiringPi both of which are included in the Raspbian distribution. I will provide a development board with header pins for breadboard if anyone is interested, contact me here or at career4KW@gmail.com<br>
+NOTE: Analog Devices has the Linduino platform and also provides drivers for many devices, check here: <br>
+https://github.com/analogdevicesinc/Linduino <br>
+and here is the Analog devices home page for the LTC2990: http://www.analog.com/en/products/monitor-control-protection/power-monitors/ltc2990.html#product-overview <br>
 I plan to use my previous Raspberry PI Node web server to put the ltc2990 data on the web using the Pi as the node server.This will be included here when completed.
 
 <b>TODO</b><br>

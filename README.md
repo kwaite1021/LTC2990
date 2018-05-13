@@ -6,7 +6,7 @@ NOTE: Analog Devices has the Linduino platform and also provides drivers for man
 https://github.com/analogdevicesinc/Linduino <br>
 and here is the Analog devices home page for the LTC2990: http://www.analog.com/en/products/monitor-control-protection/power-monitors/ltc2990.html#product-overview <br>
 I plan to use my previous Raspberry PI Node web server to put the ltc2990 data on the web using the Pi as the node server.This will be included here when completed.
-<b> Updated 13MAY2018 <b><br>
+<b> Updated 13MAY2018 </b><br>
     * Streamlined code <br>
     * Implemented error codes and timeout for conversion <br>
    

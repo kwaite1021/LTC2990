@@ -17,7 +17,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
     * Very good accuracy 14 bit ADC internal - easy to use no complicated ADC setups <br>
     * Could also add separate remote temperature using a voltage output device such as the AD22100 <br>
     * Excellent for measuring resistive current shunt voltages<br>
-    * The console driver provided allows for logging of data to a csv file, with or without std output to screen<br>
+    * The console driver shows output to std out, as well as error codes. <br>
     
 <b>Raspberry Pi setup</b><br>
     Quick:<br>
@@ -28,7 +28,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
      
 
 <b>Driver usage standalone</b><br>
-    <p>  to compile: 'g++ ltc2990.cpp -lwiringPi -o console_ltc2990_v1' <br>
+    <p>  If you wish to compile: 'g++ ltc2990.cpp -lwiringPi -o console_ltc2990_v1' <br>
          to run: ./NodeLTC2990
          Running without any arguments runs once in the console. I have used the default setup where the shunt voltage across the resistor is V1-V2, and TR2 is the remote temperature sensor.<br>
    ./NodeLTC2990 -h <i>This shows help then exits</i><br>

@@ -23,7 +23,7 @@ I plan to use my previous Raspberry PI Node web server to put the ltc2990 data o
     Quick:<br>
     (1) You need to have I2C enabled on the pi via raspi-config <br>
     (2) Ensure WiringPi library is installed [Should be installed and ready to go with Raspbian] <br>
-    (3) Wire your LTC2990 to your Raspberry Pi using I2C bus 0 <br>
+    (3) Wire your LTC2990 to your Raspberry Pi using I2C bus 1 <br>
     (4) For the web server, you need to have Node / npm setup  <br>  
      
 
